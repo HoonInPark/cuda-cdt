@@ -1,0 +1,6 @@
+[submodule "submodules/happly"]
+	path = submodules/happly
+	url = https://github.com/nmwsharp/happly.git
+[submodule "submodules/stl_parser"]
+	path = submodules/stl_parser
+	url = https://github.com/dillonhuff/stl_parser.git
