@@ -43,3 +43,6 @@
 # for cmake build
 cmake-build-*
 build/
+
+# project resource
+resources/
