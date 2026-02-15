@@ -4,8 +4,21 @@ project(cuda-cdt LANGUAGES CXX)
 add_executable(cuda-cdt src/cpp/main.cpp)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-file(GLOB CMAKE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/cmake/*.cmake")
-foreach(cmake_file ${CMAKE_FILES})
-    include(${cmake_file})
-endforeach()
+include(cuda)
+include(cudnn)
+include(tensorrt)
+
+####### submodule #######
+option(ENABLE_TRACY "Enable Tracy profiling" OFF)
+
+set(SubmodulesDir submodules)
+add_subdirectory(${SubmodulesDir}/stl_parser)
+
+if (ENABLE_TRACY)
+    add_library(TracyClient SHARED "${SubmodulesDir}/tracy/public/TracyClient.cpp")
+endif ()
+
+######## project ########
+include(cdt)

@@ -4,3 +4,6 @@
 [submodule "submodules/stl_parser"]
 	path = submodules/stl_parser
 	url = https://github.com/dillonhuff/stl_parser.git
+[submodule "submodules/tracy"]
+	path = submodules/tracy
+	url = https://github.com/wolfpld/tracy.git
