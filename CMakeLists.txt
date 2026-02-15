@@ -3,12 +3,9 @@ project(cuda-cdt LANGUAGES CXX)
 
 add_executable(cuda-cdt src/cpp/main.cpp)
 
+########## env ##########
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-
-include(cuda)
-include(cudnn)
-include(tensorrt)
 
 ####### submodule #######
 option(ENABLE_TRACY "Enable Tracy profiling" OFF)
