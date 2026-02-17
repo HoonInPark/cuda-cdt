@@ -4,9 +4,9 @@
 
 #ifndef CUDA_CDT_MESHGENERATOR_H
 #define CUDA_CDT_MESHGENERATOR_H
-#include "stl-interface.h"
+#include "interface/mesh-generator.h"
 
-class MeshGenerator : public ISTL {
+class StlGenerator : public IMeshGenerator {
 public:
 };
 

@@ -5,7 +5,7 @@
 #ifndef CUDA_CDT_STL_INTERFACE_H
 #define CUDA_CDT_STL_INTERFACE_H
 
-class ISTL {
+class IMeshGenerator {
 public:
 
 };

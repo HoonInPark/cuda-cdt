@@ -5,7 +5,7 @@
 #ifndef CUDA_CDT_DT_2D_H
 #define CUDA_CDT_DT_2D_H
 
-#include "dt-interface.h"
+#include "interface/dt.h"
 
 class DT_2D : public IDT {
 public:

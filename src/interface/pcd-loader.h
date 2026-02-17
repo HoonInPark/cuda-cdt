@@ -5,7 +5,7 @@
 #ifndef CUDA_CDT_PLY_INTERFACE_H
 #define CUDA_CDT_PLY_INTERFACE_H
 
-class IPLY {
+class IPcdLoader {
 public:
 
 };
