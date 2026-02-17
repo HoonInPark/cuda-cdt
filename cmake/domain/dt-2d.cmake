@@ -3,8 +3,11 @@ message(STATUS "Configuring for ${MODULE_NAME}")
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/module")
 
-target_sources(${CMAKE_PROJECT_NAME} PRIVATE
+add_executable(${CMAKE_PROJECT_NAME}
+        src/main.cpp
         src/dt-2d.cpp
+        src/stl-generator.cpp
+        src/ply-loader.cpp
 )
 
 

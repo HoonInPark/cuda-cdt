@@ -24,7 +24,7 @@ protected:
   virtual ~IDT() {}
 
 public:
-  virtual std::unique_ptr<Mesh> Execute(const PCD& inputPCD) = 0;
+  virtual std::unique_ptr<Mesh> Execute(const PCD& inputPcd) = 0;
 };
 
 #endif // CUDA_CDT_DT_INTERFACE_H

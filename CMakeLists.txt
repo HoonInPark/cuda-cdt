@@ -1,14 +1,16 @@
 cmake_minimum_required(VERSION 3.22)
 project(cuda-cdt LANGUAGES CXX)
 
-add_executable(${CMAKE_PROJECT_NAME}
-        src/main.cpp)
-
 #########################
 ########## env ##########
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/module")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
+
+##########################
+######### domain #########
+include(domain/dt-2d)
 
 
 #########################
@@ -25,12 +27,3 @@ endif ()
 add_subdirectory(${SubmodulesDir}/stl_parser)
 
 
-##########################
-######### module #########
-include(mesh-generator)
-include(ply-loader)
-
-
-##########################
-######### domain #########
-include(domain/dt-2d)
