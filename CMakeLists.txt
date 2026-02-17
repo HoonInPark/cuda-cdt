@@ -6,6 +6,7 @@ add_executable(${CMAKE_PROJECT_NAME}
 
 ########## env ##########
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/module")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 ####### submodule #######
@@ -18,5 +19,5 @@ if (ENABLE_TRACY)
     add_library(TracyClient SHARED "${SubmodulesDir}/tracy/public/TracyClient.cpp")
 endif ()
 
-######## project ########
-include(dt2d)
+######### domain #########
+include(domain/dt2d)
