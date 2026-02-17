@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(cuda-cdt LANGUAGES CXX)
 
-add_executable(cuda-cdt src/cpp/main.cpp)
+add_executable(${CMAKE_PROJECT_NAME}
+        src/main.cpp)
 
 ########## env ##########
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
@@ -18,4 +19,4 @@ if (ENABLE_TRACY)
 endif ()
 
 ######## project ########
-include(cdt)
+include(dt2d)

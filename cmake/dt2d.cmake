@@ -7,5 +7,5 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/module")
 include(cuda)
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    src/CDT.cpp
+        src/DT2D.cpp
 )
