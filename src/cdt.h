@@ -5,6 +5,10 @@
 #ifndef CUDA_CDT_CDT_H
 #define CUDA_CDT_CDT_H
 
-class CDT {};
+#include "dt-interface.h"
+
+class CDT : public DT_Interface {
+  public:
+};
 
 #endif // CUDA_CDT_CDT_H
