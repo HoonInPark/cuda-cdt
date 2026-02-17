@@ -5,9 +5,10 @@
 #ifndef CUDA_CDT_DT_INTERFACE_H
 #define CUDA_CDT_DT_INTERFACE_H
 
-class DT_Interface {
+class IDT {
 public:
-
+  virtual ~IDT() {}
+  // virtual
 };
 
 #endif // CUDA_CDT_DT_INTERFACE_H

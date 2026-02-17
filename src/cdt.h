@@ -7,7 +7,7 @@
 
 #include "dt-interface.h"
 
-class CDT : public DT_Interface {
+class CDT : public IDT {
   public:
 };
 

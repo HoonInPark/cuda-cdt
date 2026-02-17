@@ -7,8 +7,9 @@
 
 #include "dt-interface.h"
 
-class DT_2D : public DT_Interface {
-  public:
+class DT_2D : public IDT {
+public:
+  virtual ~DT_2D() {}
 };
 
 #endif // CUDA_CDT_DT_2D_H

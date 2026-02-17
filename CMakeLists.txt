@@ -10,6 +10,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/module")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
+
 #########################
 ####### submodule #######
 set(SubmodulesDir submodules)
@@ -23,10 +24,12 @@ endif ()
 # stl parser
 add_subdirectory(${SubmodulesDir}/stl_parser)
 
+
 ##########################
 ######### module #########
 include(mesh-generator)
 include(ply-loader)
+
 
 ##########################
 ######### domain #########
