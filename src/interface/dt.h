@@ -7,17 +7,17 @@
 #include <memory>
 
 /**
- * Entity for pointcloud data
+ * @brief Entity for pointcloud data
  */
 struct PCD {};
 
 /**
- * Entity for mesh generated
+ * @brief Entity for mesh generated
  */
 struct Mesh {};
 
 /**
- * Usecase for Delaunay Triangulation (DT)
+ * @brief Usecase for Delaunay Triangulation (DT)
  */
 class IDT {
 protected:
