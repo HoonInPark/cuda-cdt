@@ -4,12 +4,12 @@
 
 #ifndef CUDA_CDT_PLYLOADER_H
 #define CUDA_CDT_PLYLOADER_H
-#include "interface/pcd-loader.h"
+#include "interface/loader-pcd.h"
 
 /**
  * adapter class for happly
  */
-class PlyLoader : public IPcdLoader {
+class LoaderPLY : public ILoaderPCD_2D {
 public:
 };
 

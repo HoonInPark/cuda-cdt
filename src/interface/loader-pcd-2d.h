@@ -4,10 +4,13 @@
 
 #ifndef CUDA_CDT_PLY_INTERFACE_H
 #define CUDA_CDT_PLY_INTERFACE_H
+#include "dt-2d.h"
 
-class IPcdLoader {
+#include <memory>
+
+class ILoaderPCD_2D {
 public:
-
+  virtual std::unique_ptr<PCD_2D> LoadPCD_2D() = 0;
 };
 
 #endif // CUDA_CDT_PLY_INTERFACE_H

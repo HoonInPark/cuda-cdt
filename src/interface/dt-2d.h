@@ -38,7 +38,7 @@ public:
 
   void Reserve(size_t n) { triangles_.reserve(n); }
 
-  bool PushTriangle(Point_2D a, b, c) {
+  bool PushTriangle(Point_2D a, Point_2D b, Point_2D c) {
     if (triangles_.size() < triangles_.capacity()) {
       triangles_.push_back(Triangle{a, b, c});
       return true;
