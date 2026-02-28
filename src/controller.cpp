@@ -3,3 +3,11 @@
 //
 
 #include "controller.h"
+
+Controller::Controller(shared_ptr<IDT_2D> dt_2d) noexcept : dt_2d_(dt_2d) {
+  
+}
+
+Controller::~Controller() {
+
+}
