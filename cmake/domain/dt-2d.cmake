@@ -8,6 +8,7 @@ add_executable(${CMAKE_PROJECT_NAME}
         src/dt-2d-gpu.cpp
         src/stl-generator.cpp
         src/loader-ply.cpp
+        src/controller.cpp
 )
 
 
