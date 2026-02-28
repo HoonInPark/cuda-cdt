@@ -4,7 +4,7 @@
 
 #ifndef CUDA_CDT_PLYLOADER_H
 #define CUDA_CDT_PLYLOADER_H
-#include "interface/loader-pcd.h"
+#include "interface/loader-pcd-2d.h"
 
 /**
  * adapter class for happly

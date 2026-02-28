@@ -10,7 +10,7 @@
 class DT_2D_GPU : public IDT_2D {
 public:
   DT_2D_GPU();
-  virtual std::unique_ptr<Triangles> Execute(const PCD_2D &inputPCD) override;
+  std::unique_ptr<Triangles> Execute(const PCD_2D &inputPCD) override;
 };
 
 #endif // CUDA_CDT_DT_2D_GPU_H

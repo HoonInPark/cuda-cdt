@@ -7,7 +7,7 @@
 #include <memory>
 #include <vector>
 
-struct Point_2D {
+struct Vertex {
   float x, y;
 };
 
@@ -21,7 +21,7 @@ public:
 
   bool PushPoint(float x, float y) {
     if (points_.size() < points_.capacity()) {
-      points_.push_back(Point_2D{x, y});
+      points_.push_back(Vertex{x, y});
       return true;
     } else {
       return false;
@@ -29,7 +29,7 @@ public:
   }
 
 private:
-  std::vector<Point_2D> points_;
+  std::vector<Vertex> points_;
 };
 
 struct Triangles {
@@ -38,7 +38,7 @@ public:
 
   void Reserve(size_t n) { triangles_.reserve(n); }
 
-  bool PushTriangle(Point_2D a, Point_2D b, Point_2D c) {
+  bool PushTriangle(Vertex a, Vertex b, Vertex c) {
     if (triangles_.size() < triangles_.capacity()) {
       triangles_.push_back(Triangle{a, b, c});
       return true;
@@ -49,7 +49,7 @@ public:
 
 private:
   struct Triangle {
-    Point_2D a, b, c;
+    Vertex a, b, c;
   };
 
   std::vector<Triangle> triangles_;

@@ -2,7 +2,7 @@
 // Created by changjoon-lee on 2/18/26.
 //
 
-#include "DT_2D_GPU.h"
+#include "dt-2d-gpu.h"
 
 DT_2D_GPU::DT_2D_GPU() {
 
