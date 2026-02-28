@@ -5,9 +5,9 @@
 #ifndef CUDA_CDT_CONTROLLER_H
 #define CUDA_CDT_CONTROLLER_H
 
+#include "interface/dt-2d.h"
 #include <condition_variable>
 #include <thread>
-#include "interface/dt-2d.h"
 
 using namespace std;
 
@@ -18,8 +18,9 @@ public:
 
 private:
   thread condWorker_;
-  condition_variable condVar_;
+  condition_variable condWorking_;
 
+  // object injected from main component
   shared_ptr<IDT_2D> dt_2d_;
 };
 
